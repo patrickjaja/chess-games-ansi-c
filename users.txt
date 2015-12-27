@@ -1,0 +1,8 @@
+ID;NAME;PASSWORT;REGISTRIERT_SEIT;PUNKTE;
+1;test;l]kl;Fri Mar 20 10:46:09 2009;0;
+2;test2;l]kl*;Fri Mar 20 10:46:25 2009;0;
+3;gilles;l]kl;Mon Mar 30 09:06:54 2009;0;
+4;test9;l]kl1;Thu Apr 02 07:10:15 2009;0;
+5;tester;l]kl]j;Tue Jul 07 16:35:01 2009;0;
+6;admin#;Y\eaf;Tue Jul 07 16:39:54 2009;0;
+7;pschoen;)*+,;Tue Aug 13 12:47:40 2013;0;

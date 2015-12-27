@@ -1,0 +1,832 @@
+<html xmlns:v="urn:schemas-microsoft-com:vml"
+xmlns:o="urn:schemas-microsoft-com:office:office"
+xmlns:w="urn:schemas-microsoft-com:office:word"
+xmlns="http://www.w3.org/TR/REC-html40">
+
+<head>
+<meta http-equiv=Content-Type content="text/html; charset=windows-1252">
+<meta name=ProgId content=Word.Document>
+<meta name=Generator content="Microsoft Word 10">
+<meta name=Originator content="Microsoft Word 10">
+<link rel=File-List href="Online-Dateien/filelist.xml">
+<link rel=Edit-Time-Data href="Online-Dateien/editdata.mso">
+<!--[if !mso]>
+<style>
+v\:* {behavior:url(#default#VML);}
+o\:* {behavior:url(#default#VML);}
+w\:* {behavior:url(#default#VML);}
+.shape {behavior:url(#default#VML);}
+</style>
+<![endif]-->
+<title>Reversi Online-Hilfe</title>
+<!--[if gte mso 9]><xml>
+ <o:DocumentProperties>
+  <o:Author>nimi</o:Author>
+  <o:Template>Normal</o:Template>
+  <o:LastAuthor>Heinrich-Hertz BK</o:LastAuthor>
+  <o:Revision>18</o:Revision>
+  <o:Created>2009-03-17T09:32:00Z</o:Created>
+  <o:LastSaved>2009-03-19T08:45:00Z</o:LastSaved>
+  <o:Pages>1</o:Pages>
+  <o:Words>830</o:Words>
+  <o:Characters>5232</o:Characters>
+  <o:Company>SMS DEMAG AG</o:Company>
+  <o:Lines>43</o:Lines>
+  <o:Paragraphs>12</o:Paragraphs>
+  <o:CharactersWithSpaces>6050</o:CharactersWithSpaces>
+  <o:Version>10.6839</o:Version>
+ </o:DocumentProperties>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <w:WordDocument>
+  <w:SpellingState>Clean</w:SpellingState>
+  <w:GrammarState>Clean</w:GrammarState>
+  <w:HyphenationZone>21</w:HyphenationZone>
+  <w:Compatibility>
+   <w:BreakWrappedTables/>
+   <w:SnapToGridInCell/>
+   <w:WrapTextWithPunct/>
+   <w:UseAsianBreakRules/>
+  </w:Compatibility>
+  <w:BrowserLevel>MicrosoftInternetExplorer4</w:BrowserLevel>
+ </w:WordDocument>
+</xml><![endif]-->
+<style>
+<!--
+ /* Style Definitions */
+ p.MsoNormal, li.MsoNormal, div.MsoNormal
+	{mso-style-parent:"";
+	margin:0cm;
+	margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:12.0pt;
+	font-family:"Times New Roman";
+	mso-fareast-font-family:"Times New Roman";
+	mso-fareast-language:EN-US;}
+h1
+	{mso-style-next:Standard;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:1;
+	font-size:16.0pt;
+	font-family:Arial;
+	mso-font-kerning:16.0pt;
+	mso-fareast-language:EN-US;}
+h3
+	{mso-style-next:Standard;
+	margin-top:12.0pt;
+	margin-right:0cm;
+	margin-bottom:3.0pt;
+	margin-left:0cm;
+	mso-pagination:widow-orphan;
+	page-break-after:avoid;
+	mso-outline-level:3;
+	font-size:13.0pt;
+	font-family:Arial;
+	mso-fareast-language:EN-US;}
+a:link, span.MsoHyperlink
+	{color:blue;
+	text-decoration:underline;
+	text-underline:single;}
+a:visited, span.MsoHyperlinkFollowed
+	{color:purple;
+	text-decoration:underline;
+	text-underline:single;}
+span.SpellE
+	{mso-style-name:"";
+	mso-spl-e:yes;}
+@page Section1
+	{size:595.3pt 841.9pt;
+	margin:70.85pt 70.85pt 2.0cm 70.85pt;
+	mso-header-margin:35.4pt;
+	mso-footer-margin:35.4pt;
+	mso-paper-source:0;}
+div.Section1
+	{page:Section1;}
+-->
+</style>
+<!--[if gte mso 10]>
+<style>
+ /* Style Definitions */
+ table.MsoNormalTable
+	{mso-style-name:"Normale Tabelle";
+	mso-tstyle-rowband-size:0;
+	mso-tstyle-colband-size:0;
+	mso-style-noshow:yes;
+	mso-style-parent:"";
+	mso-padding-alt:0cm 5.4pt 0cm 5.4pt;
+	mso-para-margin:0cm;
+	mso-para-margin-bottom:.0001pt;
+	mso-pagination:widow-orphan;
+	font-size:10.0pt;
+	font-family:"Times New Roman";}
+</style>
+<![endif]--><!--[if gte mso 9]><xml>
+ <o:shapedefaults v:ext="edit" spidmax="11266"/>
+</xml><![endif]--><!--[if gte mso 9]><xml>
+ <o:shapelayout v:ext="edit">
+  <o:idmap v:ext="edit" data="1"/>
+ </o:shapelayout></xml><![endif]-->
+</head>
+
+<body lang=DE link=blue vlink=purple style='tab-interval:35.4pt'>
+
+<div class=Section1>
+
+<h1 align=center style='text-align:center'><a name="_top"></a><a
+name="_Online_Hilfe"></a><span style='font-size:20.0pt'>Online Hilfe<o:p></o:p></span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><!--[if gte vml 1]><v:shapetype
+ id="_x0000_t75" coordsize="21600,21600" o:spt="75" o:preferrelative="t"
+ path="m@4@5l@4@11@9@11@9@5xe" filled="f" stroked="f">
+ <v:stroke joinstyle="miter"/>
+ <v:formulas>
+  <v:f eqn="if lineDrawn pixelLineWidth 0"/>
+  <v:f eqn="sum @0 1 0"/>
+  <v:f eqn="sum 0 0 @1"/>
+  <v:f eqn="prod @2 1 2"/>
+  <v:f eqn="prod @3 21600 pixelWidth"/>
+  <v:f eqn="prod @3 21600 pixelHeight"/>
+  <v:f eqn="sum @0 0 1"/>
+  <v:f eqn="prod @6 1 2"/>
+  <v:f eqn="prod @7 21600 pixelWidth"/>
+  <v:f eqn="sum @8 21600 0"/>
+  <v:f eqn="prod @7 21600 pixelHeight"/>
+  <v:f eqn="sum @10 21600 0"/>
+ </v:formulas>
+ <v:path o:extrusionok="f" gradientshapeok="t" o:connecttype="rect"/>
+ <o:lock v:ext="edit" aspectratio="t"/>
+</v:shapetype><v:shape id="_x0000_i1025" type="#_x0000_t75" style='width:159.75pt;
+ height:129.75pt'>
+ <v:imagedata src="Online-Dateien/image001.jpg" o:title="image001"/>
+</v:shape><![endif]--><![if !vml]><img width=213 height=173
+src="Online-Dateien/image002.jpg" v:shapes="_x0000_i1025"><![endif]><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:-18.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><a href="#_Reversi_Online-Hilfe"><span class=SpellE><span
+style='color:black;text-decoration:none;text-underline:none'>Reversi</span></span></a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:177.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:-18.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><a href="#_Dame_Online-Hilfe"><span style='color:black;
+text-decoration:none;text-underline:none'>Dame</span></a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:177.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:-18.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><a href="#_Vier_Gewinnt_Online-Hilfe"><span
+style='color:black;text-decoration:none;text-underline:none'>Vier Gewinnt</span></a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:159.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='margin-left:-18.0pt;text-align:center'><b
+style='mso-bidi-font-weight:normal'><span style='font-size:18.0pt;font-family:
+Arial;color:black'><a href="#_Bridges_Online-Hilfe"><span style='color:black;
+text-decoration:none;text-underline:none'>Bridges</span></a><o:p></o:p></span></b></p>
+
+<p class=MsoNormal style='tab-stops:list 195.0pt'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial;color:black'><o:p>&nbsp;</o:p></span></b></p>
+
+<h3><a href="mailto:TendoResearchCenter@web.de?subject=Online%20Hilfe"><span
+style='color:windowtext;text-decoration:none;text-underline:none'>Support
+E-Mail</span></a><span class=MsoHyperlink><span style='color:windowtext;
+text-decoration:none;text-underline:none'><o:p></o:p></span></span></h3>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<h1 align=center style='text-align:center'><a name="_Reversi_Online-Hilfe"></a><span
+class=SpellE><span style='font-size:22.0pt'>Reversi</span></span><span
+style='font-size:22.0pt'> Online-Hilfe<o:p></o:p></span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Ziel des Spiels:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Das Ziel des Spiels ist es, am Ende
+mehr Steine als der gegnerische Spieler zu besitzen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Das Spiel ist beendet sobald kein
+Zug mehr möglich ist.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Anleitung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Der Spieler darf seinen Spielstein
+nur auf freien Feldern platzieren. Auf diesem muss ein gegnerischer Stein
+zwischen einem schon <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>gelegten eigenen Stein und dem neuen
+Stein eingeschlossen werden.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Steuerung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Spieler müssen ihre Spielsteine
+mit Hilfe der Koordinateneingabe auf dem Spielfeld platzieren.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Zuerst erfolgt die Eingabe der
+X-Koordinate durch eine Zahl zwischen 1 und 8.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Abfrage der Y-Koordinate erfolgt
+nach der korrekten Eingabe der X-Koordinate.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Auch hier muss der Spieler eine
+Eingabe zwischen 1 und 8 tätigen, um den Spielstein zu platzieren und somit
+seinen Zug zu beenden.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Bei einer fehlerhaften Eingabe
+werden die einzelnen Abfragen solange wiederholt, bis ein zulässiger Zug
+eingegeben wurde.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Um ein laufendes Spiel aufzugeben
+muss ein Spieler eine „0“ anstatt einer Koordinate eingeben.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><a href="#_Online_Hilfe">Zum
+Seitenanfang</a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal><b style='mso-bidi-font-weight:normal'><span
+style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<h1 align=center style='text-align:center'><a name="_Dame_Online-Hilfe"></a><span
+style='font-size:22.0pt;mso-bidi-font-size:18.0pt;mso-bidi-font-weight:normal'>Dame
+Online-Hilfe<o:p></o:p></span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Ziel des Spiels:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Das Ziel des Spiels ist es, dem
+gegnerischen Spieler die Spielfiguren zu enteignen<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>und Ihm somit keinen weiteren Zug zu
+ermöglichen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:10.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Anleitung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Spielsteine können sich nur
+diagonal und vorwärts auf dem Spielfeld bewegen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Befindet sich ein gegnerischer
+Spielstein auf dem Zielfeld und das nächste Feld in dieser Diagonale ist nicht
+besetzt, <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>so wird der übersprungene Stein
+erbeutet.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Das Erbeuten mehrerer Spielsteine
+des Gegners ist während eines Spielzuges möglich. Dies erfolgt, <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>wenn mehrere gegnerische Spielsteine
+in dieser Diagonalen liegen und das darauf folgende Feld frei ist.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Erreicht ein Spieler mit einem
+Spielstein aus der hintersten Reihe die gegenüber liegende Spielfeldseite, <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>so wird dieser Stein zu einem „König“.
+Dieser „König“ kann in alle diagonalen Richtungen ziehen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Steuerung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Spieler müssen ihre Spielsteine
+mit Hilfe der Koordinateneingabe auf dem Spielfeld platzieren.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Als erstes erfolgt die Auswahl des
+Spielsteines, welcher eine Aktion ausführen soll.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Dies wird durch die Eingabe der
+X-Koordinate getätigt. Es stehen die Zahlen zwischen 1 und 8 zur Auswahl.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Abfrage der Y-Koordinate erfolgt
+nach der korrekten Eingabe der X-Koordinate.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Auch hier muss der Spieler eine
+Eingabe zwischen 1 und 8 tätigen, um den Spielstein auszuwählen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Ist ein Spielstein ausgewählt
+worden, so weist man diesem sein Zielfeld mit der erneuten Koordinateneingabe
+zu.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Bei einer fehlerhaften Eingabe
+werden die einzelnen Abfragen solange wiederholt, bis ein zulässiger Zug eingegeben
+wurde.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Um ein laufendes Spiel aufzugeben
+muss ein Spieler eine „0“ anstatt einer Koordinate eingeben.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><a href="#_Online_Hilfe">Zum
+Seitenanfang</a><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-size:18.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<h1 align=center style='text-align:center'><a name="_Vier_Gewinnt_Online-Hilfe"></a><span
+style='font-size:22.0pt;mso-bidi-font-size:18.0pt;mso-bidi-font-weight:normal'>Vier
+Gewinnt Online-Hilfe<o:p></o:p></span></h1>
+
+<p class=MsoNormal align=center style='text-align:center'><b><span
+style='font-size:22.0pt;mso-bidi-font-size:13.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Ziel des Spiels:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Der Spieler, der zuerst vier Spielsteine
+in Reihe gelegt hat, gewinnt das Spiel.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Anleitung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Viererreihe kann waagerecht,
+senkrecht und diagonal komplettiert werden.</span><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'><o:p>&nbsp;</o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Steuerung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Eingabe der Position des neuen
+Spielsteins erfolgt, durch die Eingabe der X- und Y-Koordinaten.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Zuerst erfolgt die Abfrage der
+X-Koordinate, indem ein Buchstabe zwischen A und F eingegeben werden muss.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Darauf folgt die Abfrage der
+Y-Koordinate, indem eine Zahl zwischen 1 und 7 eingegeben werden muss.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Wurden diese beiden Eingaben korrekt
+getätigt, so wird der Spielstein auf dem Spielfeld platziert.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Bei einer fehlerhaften Eingabe muss
+die Eingabe wiederholt werden.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Um ein laufendes Spiel aufzugeben
+muss ein Spieler eine „0“ anstatt einer Koordinate eingeben.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><a href="#_Online_Hilfe">Zum Seitenanfang</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:11.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<h1 align=center style='text-align:center'><a name="_Bridges_Online-Hilfe"></a><span
+style='font-size:22.0pt;mso-bidi-font-size:11.0pt;mso-bidi-font-weight:normal'>Bridges
+Online-Hilfe<o:p></o:p></span></h1>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Ziel des Spiels:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><o:p>&nbsp;</o:p></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Das Ziel für den Spieler mit den
+roten Spielsteinen ist es, eine Brücke vom oberen bis zum unteren Spielfeld zu
+bauen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Der Spieler mit den blauen Spielsteinen
+hat das Ziel eine Brücke von links nach rechts zu bauen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Anleitung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Jeder Spieler kann seinen Spielstein
+auf einem freien weißen Feld platzieren. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Der Brückenverlauf muss nicht gerade
+verlaufen und darf während der Bauzeit<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>aus verschiedenen Bausegmenten
+bestehen.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Es besteht die Möglichkeit den
+gegnerischen Brückenbau zu behindern, indem ein weißes Feld ausgewählt wird <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>welches den Spielaufbau irritiert. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><b style='mso-bidi-font-weight:
+normal'><span style='font-family:Arial'>Steuerung:<o:p></o:p></span></b></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Spieler müssen ihre Spielsteine
+mit Hilfe der Koordinateneingabe auf einem weißen Feld platzieren.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Die Eingabe erfolgt indem der
+Spieler zuerst die X-Koordinate mit dem betreffenden Buchstaben eingibt.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Direkt darauf folgt die Eingabe der
+Y-Koordinate durch die zugehörige Zahl.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Wird eine der beiden Eingaben falsch
+getätigt und erfolgt eine erneute Abfrage der Koordinaten. <o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'>Um ein laufendes Spiel aufzugeben
+muss ein Spieler eine „0“ anstatt einer Koordinate eingeben.<o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:11.0pt;font-family:Arial'><a href="#_Online_Hilfe">Zum
+Seitenanfang</a><o:p></o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal><span style='font-size:8.0pt'><o:p>&nbsp;</o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:8.0pt;font-family:Arial'>Die Verwendung von Bildern, Texten sowie
+Textauszüge sind für kommerzielle und nicht-kommerzielle Zwecke nicht erlaubt.
+Der Site-Betreiber übernimmt keinerlei Gewähr für die Aktualität, Richtigkeit,
+Vollständigkeit oder Qualität der bereitgestellten Informationen.
+Haftungsansprüche gegen den Site-Betreiber, die sich auf Schäden materieller
+oder ideeller Art beziehen, welche durch die Nutzung oder Nichtnutzung der
+dargebotenen Informationen bzw. durch die Nutzung fehlerhafter und
+unvollständiger Informationen verursacht wurden, sind grundsätzlich
+ausgeschlossen. Alle Angebote sind frei bleibend und unverbindlich. Der
+Site-Betreiber behält es sich ausdrücklich vor, Teile der Seiten oder das
+gesamte Angebot ohne gesonderte Ankündigung zu verändern, zu ergänzen, zu
+löschen oder die Veröffentlichung zeitweise oder endgültig einzustellen.</span><span
+style='font-size:8.0pt'><o:p></o:p></span></p>
+
+<p class=MsoNormal align=center style='text-align:center'><span
+style='font-size:8.0pt;font-family:Arial'>®©™ <span class=SpellE>by</span> <span
+class=SpellE>Tendo</span> Research Center<o:p></o:p></span></p>
+
+</div>
+
+</body>
+
+</html>
